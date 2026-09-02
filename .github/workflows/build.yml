@@ -26,7 +26,6 @@ jobs:
 
     - name: Initialize Buildozer Config
       run: |
-        # If buildozer.spec does not exist, initialize it
         if [ ! -f buildozer.spec ]; then
           buildozer init
         fi
@@ -34,8 +33,6 @@ jobs:
     - name: Build APK with Buildozer
       run: |
         buildozer -v android debug
-      env:
-        BUILDER_ACCEPT_LICENSES: 1
 
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4
