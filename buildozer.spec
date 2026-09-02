@@ -33,3 +33,5 @@ android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug)
 log_level = 2
+# (int) Accept android SDK licenses automatically (1 = yes)
+android.accept_sdk_license = True
