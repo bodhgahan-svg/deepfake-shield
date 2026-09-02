@@ -13,14 +13,14 @@ package.domain = org.decentralized
 source.include_exts = py,png,jpg,kv,atlas
 
 # (list) Application requirements
-# यहाँ हम Python की जरूरी लाइब्रेरीज़ लिखेंगे जो ऐप के अंदर चलेंगी (जैसे requests, pillow आदि)
+# Here we will write the required Python libraries for the app (like requests, pillow, etc.)
 requirements = python3,kivy,requests
 
 # (str) Supported orientations
 orientation = portrait
 
 # (list) Permissions
-# इंटरनेट एक्सेस और नेटवर्क स्टेट ताकि ऐप सीधे स्ट्राइक या रिपोर्ट भेज सके
+# Internet access and network state so the app can send strikes or reports directly
 android.permissions = INTERNET,ACCESS_NETWORK_STATE
 
 [buildozer]
