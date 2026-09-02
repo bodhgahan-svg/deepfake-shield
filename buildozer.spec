@@ -12,6 +12,12 @@ package.domain = org.decentralized
 # (list) Source files to include (let it include python files)
 source.include_exts = py,png,jpg,kv,atlas
 
+# (str) Source directory where the application files are located
+source.dir = .
+
+# (str) Application versioning
+version = 1.0
+
 # (list) Application requirements
 # Here we will write the required Python libraries for the app (like requests, pillow, etc.)
 requirements = python3,kivy,requests
