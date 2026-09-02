@@ -26,7 +26,7 @@ jobs:
 
     - name: Initialize Buildozer Config
       run: |
-        # अगर buildozer.spec फाइल पहले से नहीं है तो इनिशियलाइज करें
+        # If buildozer.spec does not exist, initialize it
         if [ ! -f buildozer.spec ]; then
           buildozer init
         fi
