@@ -19,19 +19,30 @@ source.dir = .
 version = 1.0
 
 # (list) Application requirements
-# Here we will write the required Python libraries for the app (like requests, pillow, etc.)
 requirements = python3,kivy,requests
 
 # (str) Supported orientations
 orientation = portrait
 
 # (list) Permissions
-# Internet access and network state so the app can send strikes or reports directly
-android.permissions = INTERNET,ACCESS_NETWORK_STATE
+android.permissions = INTERNET, ACCESS_NETWORK_STATE
+
+# (int) Target Android API, should be as high as possible
+android.api = 33
+
+# (int) Minimum API your APK will support
+android.minAPI = 21
+
+# (int) Android SDK version to use
+android.sdk = 33
+
+# (str) Android NDK version to use
+android.ndk = 25b
 
 [buildozer]
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug)
 log_level = 2
+
 # (int) Accept android SDK licenses automatically (1 = yes)
 android.accept_sdk_license = True
