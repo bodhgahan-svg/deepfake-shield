@@ -19,9 +19,10 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y build-essential git python3-dev ccache libncursesw5 libgconf-2-4 libstdc++6 zlib1g-dev python3-pip libltdl-dev
+        sudo apt-get install -y build-essential git python3-dev ccache libstdc++6 zlib1g-dev python3-pip libltdl-dev
         pip install --upgrade pip
         pip install buildozer cython==0.29.36
+
 
     - name: Build with Buildozer
       run: |
