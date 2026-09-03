@@ -46,3 +46,5 @@ log_level = 2
 
 # (int) Accept android SDK licenses automatically (1 = yes)
 android.accept_sdk_license = True
+# (str) Specific Android build tools version
+android.build_tools_version = 33.0.2
